@@ -1,0 +1,67 @@
+#Catalog{
+    margin-top: 7rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    max-width: 30%;
+    min-width: 300px;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background: white;
+}
+.cards img{
+    border-radius: 1.5rem;
+    height:240px;
+    object-fit: cover;
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translateX(-5%);
+}
+
+.text-container {
+    padding: 0.7rem 1rem;
+}
+.text-container h6{
+    text-align: right;
+    font-size: 1.2rem;
+}
+.flat-name h5{
+    text-align: left;
+}
+.flat-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flat-icons{
+    font-size: 1.2rem;
+    display: flex;
+}
+.flat-icons div{
+    padding: 0 0.4rem;
+
+}
+#flat-card{
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient( darkblue,#448aba);
+    padding: 10px 0;
+}
+.product-button button{
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    border: 1px solid;
+    border-radius: 1.2rem;
+    background: linear-gradient( darkblue,#2288ff);
+    transition: 0.3s ease;
+    color: white;
+    outline: none;
+}
