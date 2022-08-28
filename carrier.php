@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet"
@@ -33,13 +33,12 @@
                 <ul class="list">
                     <li><a href="index.php">Kezdőoldal</a></li>
                     <li><a href="rolunk.html">Rólunk</a></li>
-                    <li><a href="#">Tulajdonságok</a></li>
-                    <li><a href="#">Katalógus</a></li>
-                    <li><a href="#">Hirdetés</a></li>
-                    <li id="log-in"><h3><i class='bx bx-log-in' ></i></h3>Bejelentkezés</li>
+                    <li><a href="#tulaj">Tulajdonságok</a></li>
+                    <li><a href="products.php">Katalógus</a></li>
+                    <a href="login.php"><li id="log-in"><h3><i class='bx bx-log-in' ></i></h3></li></a>
                 </ul>
             </div>
-            <h4><i class='bx bx-log-in' id="log-in2"></i></h4>
+            <a href="login.php"><h4><i class='bx bx-log-in' id="log-in2"></i></h4></a>
         </nav>
     </div>
 </div>

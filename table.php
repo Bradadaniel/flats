@@ -9,8 +9,8 @@
 
 
     <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet"
@@ -27,20 +27,19 @@
         </div>
         <hr style="color: black; margin: 0">
         <nav class="navbar">
-            <a href="index.html" class="logo"><h4><i class='bx bx-home'></i>New Home</h4></a>
+            <a href="index.php" class="logo"><h4><i class='bx bx-home'></i>New Home</h4></a>
             <input type="checkbox" id="toggler">
             <label for="toggler"><i class='bx bx-menu'></i></label>
             <div class="menu">
                 <ul class="list">
-                    <li><a href="index.html">Kezdőoldal</a></li>
+                    <li><a href="index.php">Kezdőoldal</a></li>
                     <li><a href="rolunk.html">Rólunk</a></li>
-                    <li><a href="#">Tulajdonságok</a></li>
+                    <li><a href="#tulaj">Tulajdonságok</a></li>
                     <li><a href="products.php">Katalógus</a></li>
-                    <li><a href="#">Hirdetés</a></li>
-                    <li id="log-in"><h3><i class='bx bx-log-in' ></i></h3>Bejelentkezés</li>
+                    <a href="login.php"><li id="log-in"><h3><i class='bx bx-log-in' ></i></h3></li></a>
                 </ul>
             </div>
-            <h4><i class='bx bx-log-in' id="log-in2"></i></h4>
+            <a href="login.php"><h4><i class='bx bx-log-in' id="log-in2"></i></h4></a>
         </nav>
     </div>
 </div>
@@ -52,21 +51,21 @@
     <div class="table-section">
         <table>
             <thead>
-                <tr>
-                    <th>Hitel</th>
-                    <th>Kamat</th>
-                    <th>Végösszeg</th>
-                    <th>Idő</th>
-                    <th>Értékelés</th>
-                </tr>
+            <tr>
+                <th>Hitel</th>
+                <th>Kamat</th>
+                <th>Végösszeg</th>
+                <th>Idő</th>
+                <th>Értékelés</th>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1.000€</td>
-                    <td>15%</td>
-                    <td>1.150€</td>
-                    <td>12hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>1.000€</td>
+                <td>15%</td>
+                <td>1.150€</td>
+                <td>12hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
@@ -75,159 +74,159 @@
                     </div></td>
             </tr>
 
-                <tr>
-                    <td>2.000€</td>
-                    <td>14%</td>
-                    <td>2.280€</td>
-                    <td>16hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>2.000€</td>
+                <td>14%</td>
+                <td>2.280€</td>
+                <td>16hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bx-star' ></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>3.000€</td>
-                    <td>13%</td>
-                    <td>3.390€</td>
-                    <td>20hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>3.000€</td>
+                <td>13%</td>
+                <td>3.390€</td>
+                <td>20hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bx-star' ></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>4.000€</td>
-                    <td>12%</td>
-                    <td>4.480€</td>
-                    <td>24hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>4.000€</td>
+                <td>12%</td>
+                <td>4.480€</td>
+                <td>24hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bx-star' ></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>5.000€</td>
-                    <td>11%</td>
-                    <td>5.550€</td>
-                    <td>28hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>5.000€</td>
+                <td>11%</td>
+                <td>5.550€</td>
+                <td>28hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bx-star' ></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>6.000€</td>
-                    <td>10%</td>
-                    <td>6.600€</td>
-                    <td>32hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>6.000€</td>
+                <td>10%</td>
+                <td>6.600€</td>
+                <td>32hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star-half' ></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>7.000€</td>
-                    <td>9%</td>
-                    <td>7.630€</td>
-                    <td>36hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>7.000€</td>
+                <td>9%</td>
+                <td>7.630€</td>
+                <td>36hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star-half' ></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>8.000€</td>
-                    <td>8%</td>
-                    <td>8.640€</td>
-                    <td>40hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>8.000€</td>
+                <td>8%</td>
+                <td>8.640€</td>
+                <td>40hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star-half' ></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>9.000€</td>
-                    <td>7%</td>
-                    <td>9.630€</td>
-                    <td>44hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>9.000€</td>
+                <td>7%</td>
+                <td>9.630€</td>
+                <td>44hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star-half' ></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>10.000€</td>
-                    <td>6%</td>
-                    <td>10.600€</td>
-                    <td>46hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>10.000€</td>
+                <td>6%</td>
+                <td>10.600€</td>
+                <td>46hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star-half' ></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>20.000€</td>
-                    <td>5%</td>
-                    <td>21.000€</td>
-                    <td>60hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>20.000€</td>
+                <td>5%</td>
+                <td>21.000€</td>
+                <td>60hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                     </div></td>
-                </tr>
+            </tr>
 
-                <tr>
-                    <td>40.000€</td>
-                    <td>3%</td>
-                    <td>41.200€</td>
-                    <td>90hónap</td>
-                    <td><div class="rating">
+            <tr>
+                <td>40.000€</td>
+                <td>3%</td>
+                <td>41.200€</td>
+                <td>90hónap</td>
+                <td><div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                     </div></td>
-                </tr>
+            </tr>
             </tbody>
         </table>
     </div>

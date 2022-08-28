@@ -10,9 +10,9 @@ $dbname = "flat";
     // set the PDO error mode to exception
     $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 if (!empty($_POST['search'])) {
-    $stmt = $connect->prepare("SELECT * FROM products WHERE type LIKE ? OR price LIKE ?");
+    $stmt = $connect->prepare("SELECT * FROM products WHERE type LIKE ? OR price LIKE ? OR size LIKE ?");
     $stmt->execute([
-        "%" . $_POST['search'] . "%", "%" . $_POST['search'] . "%"
+        "%" . $_POST['search'] . "%", "%" . $_POST['search'] . "%",  "%" . $_POST['search'] . "%" 
     ]);
     $result = $stmt->fetchAll();
 }

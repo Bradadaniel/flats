@@ -41,9 +41,8 @@ session_start();
                 <ul class="list">
                     <li><a href="index.php">Kezdőoldal</a></li>
                     <li><a href="rolunk.html">Rólunk</a></li>
-                    <li><a href="#">Tulajdonságok</a></li>
+                    <li><a href="#tulaj">Tulajdonságok</a></li>
                     <li><a href="products.php">Katalógus</a></li>
-                    <li><a href="#">Hirdetés</a></li>
                     <a href="login.php"><li id="log-in"><h3><i class='bx bx-log-in' ></i></h3></li></a>
                 </ul>
             </div>

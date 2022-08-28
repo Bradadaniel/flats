@@ -56,8 +56,8 @@ $type = $stmt->fetchAll();
         <a href="login.php" class="btn">login</a>
         <a href="register.php" class="btn">register</a>
         <a href="logout.php" class="btn">logout</a>
-        <a href="messages.php" class="btn">Üzenetek</a>
-        <a href="messages.php" class="btn">Adatok módositása</a>
+        <a href="messages.php"  class="btn">Üzenetek</a>
+<!--        <a href="userdata_update.php"  class="btn">Adatok módositása</a>-->
     </div>
 </div>
 
@@ -168,10 +168,23 @@ $type = $stmt->fetchAll();
             </thead>
             <?php
             foreach ($result as $value) {
+                $sql = "SELECT name
+        FROM user_form WHERE user_form.id=:user_id";
+                $query = $connect->prepare($sql);
+                $query->bindParam(':user_id', $value['user_id']);
+                $query->execute();
+                $result3 = $query->fetchColumn();
+
+                $sql = "SELECT city_name
+        FROM city WHERE city.id=:city_id";
+                $query = $connect->prepare($sql);
+                $query->bindParam(':city_id', $value['city_id']);
+                $query->execute();
+                $result2 = $query->fetchColumn();
                 echo  '<tr>
                             <td><img width="80px" height="80px" src ="' .'uploads'. $value['image'] . '"></td>
-                            <td>' . $value['user_id'] . '</td>
-                            <td>' . $value['city_id'] . '</td>
+                            <td>' . $result3 . '</td>
+                            <td>' . $result2 . '</td>
                             <td>' . $value['size'] . ' m²</td>
                             <td>' . $value['price'] . ' din</td>
                             <td>' . $value['bedroom'] . '</td>
@@ -182,8 +195,8 @@ $type = $stmt->fetchAll();
                             <td>' . $value['parking'] . '</td>
                             <td>' . $value['date'] . '</td>  
                             <td colspan="2">
-                            <a href="admin_update.php?id='.$value['id'].'" type="submit"value="' . $value['id'] . '" class="btn"><i class="bx bx-edit-alt"></i> Szerk.</a>
-                            <a href="admin.php?delete='.$value['id'].'" type="submit"  value="' . $value['id'] . '" class="btn"><i class="bx bx-trash"></i>Törl.</a>
+                            <a href="user_update.php?id='.$value['id'].'" type="submit" value="' . $value['id'] . '" class="btn"><i class="bx bx-edit-alt"></i> Szerk.</a>
+                            <a href="user.php?delete='.$value['id'].'" type="submit"  value="' . $value['id'] . '" class="btn"><i class="bx bx-trash"></i>Törl.</a>
                             </td>
                      </tr>';
             }
@@ -244,14 +257,11 @@ if (isset($_POST['user_id']) && ($_POST['city_id']) && ($_POST['type'])) {
         echo '<script>alert("A lakás hozzáadva")</script>';
         header("Refresh: 2");
     } else {
-        header("Location: admin.php");
+        header("Location: user.php");
     }
 //        }
 }
 ?>
-
-
-
 
 </body>
 

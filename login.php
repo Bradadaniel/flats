@@ -79,10 +79,9 @@ if(isset($_POST['submit'])){
             <div class="menu">
                 <ul class="list">
                     <li><a href="index.php">Kezdőoldal</a></li>
-                    <li><a href="rolunk.html">Rólunk</a></li>
-                    <li><a href="#">Tulajdonságok</a></li>
+                    <li><a href="rolunk.php">Rólunk</a></li>
+                    <li><a href="#tulaj">Tulajdonságok</a></li>
                     <li><a href="products.php">Katalógus</a></li>
-                    <li><a href="#">Hirdetés</a></li>
                     <a href="login.php"><li id="log-in"><h3><i class='bx bx-log-in' ></i></h3></li></a>
                 </ul>
             </div>
@@ -103,9 +102,11 @@ if(isset($_POST['submit'])){
         }
         ?>
         <input type="email" name="email" required placeholder="irja be az emailt">
-        <input type="password" name="password" required placeholder="adjon meg egz jelszot">
+        <input type="password" name="password" required placeholder="adjon meg egy jelszot">
         <input type="submit" name="submit" value="Bejelentkezes" class="form-btn">
         <p>nincs meg accountja? <a href="register.php"> regisztralj most</a></p>
+        <p><a href="change-password.php">Elfelejtett jelszo?
+            </a></p>
     </form>
 </div>
 

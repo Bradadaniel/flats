@@ -90,10 +90,10 @@ if (!empty($_GET['product']) ){
                 <h5>Lift: ' . $value['elevator'] . '</h5>
                 <h5>Parking: ' . $value['parking'] . '</h5>
                 <h5>Kiadás kezdete: ' . $value['date'] . '</h5>
-                <a href="renting.php"><button>Üzenet küldése</button></a>
+                <a href="messages.php?conversation=-1&target='.$value['user_id'].'&product='.$value['id'].'"><button>Üzenet küldése</button></a>
                 <a href="products.php"><button>Vissza</button></a>
                 </div>
-                
+               
             </div>
         </div>
     </div>

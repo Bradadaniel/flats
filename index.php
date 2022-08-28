@@ -38,10 +38,9 @@ session_start();
             <div class="menu">
                 <ul class="list">
                     <li><a href="index.php">Kezdőoldal</a></li>
-                    <li><a href="rolunk.html">Rólunk</a></li>
+                    <li><a href="rolunk.php">Rólunk</a></li>
                     <li><a href="#tulaj">Tulajdonságok</a></li>
                     <li><a href="products.php">Katalógus</a></li>
-                    <li><a href="#">Hirdetés</a></li>
                     <a href="login.php"><li id="log-in"><h3><i class='bx bx-log-in' ></i></h3></li></a>
                 </ul>
             </div>
@@ -62,48 +61,49 @@ session_start();
     </div>
 
     <!-- Kitoltes -->
-
+<!---->
     <div class="text">
-        Üdvözöljük az oldalon!
+        Üdvözöljük az oldalon! <br>
+        Találja meg álmai otthonát!
     </div>
-    <div class="search">
-        <form>
-            <div class="rent-sell">
-                <input type="radio" id="rent" name="rent-sell" style="display: none"><label for="rent">Kiadó</label>
-                <input type="radio" id="sell" name="rent-sell" style="display: none"><label for="sell">Eladó</label>
-            </div>
-            <div class="select-option">
-                <select>
-                    <option>Lakás</option>
-                    <option>Családi ház</option>
-                    <option>Garázs</option>
-                </select>
-            </div>
-            <div class="search-bar">
-                <input type="search" placeholder="Város">
-            </div>
-            <div class="min-max-price">
-                <a style="color: white">Ar</a><br>
-                <input type="number" placeholder="Min"><span style="color: white">&nbsp;-&nbsp;</span><input type="number" placeholder="Max">
-            </div>
-            <div class="min-max-meter">
-                <a style="color: white">m2</a><br>
-                <input type="number" placeholder="Min"><span style="color: white">&nbsp;-&nbsp;</span><input type="number" placeholder="Max">
-            </div>
-            <div class="select-rooms">
-                <select>
-                    <option>1 szoba</option>
-                    <option>2+ szoba</option>
-                    <option>3+ szoba</option>
-                    <option>4+ szoba</option>
-                    <option>5+ szoba</option>
-                </select>
-            </div>
-            <div class="search-icon">
-                <button><i class='bx bx-search'></i>Keresés</button>
-            </div>
-        </form>
-    </div>
+<!--    <div class="search">-->
+<!--        <form>-->
+<!--            <div class="rent-sell">-->
+<!--                <input type="radio" id="rent" name="rent-sell" style="display: none"><label for="rent">Kiadó</label>-->
+<!--                <input type="radio" id="sell" name="rent-sell" style="display: none"><label for="sell">Eladó</label>-->
+<!--            </div>-->
+<!--            <div class="select-option">-->
+<!--                <select>-->
+<!--                    <option>Lakás</option>-->
+<!--                    <option>Családi ház</option>-->
+<!--                    <option>Garázs</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div class="search-bar">-->
+<!--                <input type="search" placeholder="Város">-->
+<!--            </div>-->
+<!--            <div class="min-max-price">-->
+<!--                <a style="color: white">Ar</a><br>-->
+<!--                <input type="number" placeholder="Min"><span style="color: white">&nbsp;-&nbsp;</span><input type="number" placeholder="Max">-->
+<!--            </div>-->
+<!--            <div class="min-max-meter">-->
+<!--                <a style="color: white">m2</a><br>-->
+<!--                <input type="number" placeholder="Min"><span style="color: white">&nbsp;-&nbsp;</span><input type="number" placeholder="Max">-->
+<!--            </div>-->
+<!--            <div class="select-rooms">-->
+<!--                <select>-->
+<!--                    <option>1 szoba</option>-->
+<!--                    <option>2+ szoba</option>-->
+<!--                    <option>3+ szoba</option>-->
+<!--                    <option>4+ szoba</option>-->
+<!--                    <option>5+ szoba</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div class="search-icon">-->
+<!--                <button><i class='bx bx-search'></i>Keresés</button>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
     <!-- rolunk -->
     <div class="container">
         <div class="row" style="margin:100px 0" id="Rolunk">
@@ -118,19 +118,19 @@ session_start();
         </div>
         <div class="tulaj" id="tulaj"></div>
         <div  class="row" id="Tulaj" style="margin-bottom: 150px">
-            <div onclick="location.href='carrier.html'" class="card">
+            <div onclick="location.href='carrier.php'" class="card">
                 <i class='bx bxs-user'></i>
                 <h5><b>Karrier lehetőség a New Home-nál</b></h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, vel?</p>
             </div>
 
-            <div onclick="location.href='table.html'" class="card">
+            <div onclick="location.href='table.php'" class="card">
                 <i class='bx bxs-user'></i>
                 <h5><b>Hitel igénylésének lehetőségei</b></h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, vel?</p>
             </div>
 
-            <div onclick="location.href='agents.html'" class="card">
+            <div onclick="location.href='agents.php'" class="card">
                 <i class='bx bxs-user'></i>
                 <h5><b>Értékesitő kereső</b></h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, vel?</p>

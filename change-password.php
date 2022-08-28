@@ -1,38 +1,28 @@
 <?php
-
 @include 'db_config.php';
+session_start();
 
 
-if(isset($_POST['submit'])){
+if(isset($_POST['submit'])) {
 
-    $name = mysqli_real_escape_string($connect, $_POST['name']);
     $email = mysqli_real_escape_string($connect, $_POST['email']);
+    $opw= md5($_POST['opassword']);
     $pass = md5($_POST['password']);
     $cpass = md5($_POST['cpassword']);
-    $user_type = $_POST['user_type'];
 
-  $select = " SELECT * FROM user_form WHERE email= '$email' && password= '$pass' ";
+    $sql= mysqli_query($connect,"SELECT email,password FROM user_form WHERE email='$email' AND password='$opw'");
+    $num = mysqli_fetch_array($sql);
 
-  $result = mysqli_query($connect, $select);
+    if ($num > 0) {
+        $connect = mysqli_query($connect, "UPDATE user_form SET password='$pass' WHERE email='$email'");
+    }
 
-  if(mysqli_num_rows($result) > 0){
-    $error[] = 'a felhasználó már létezik';
-  }else{
-      if($pass !=$cpass){
-          $error[] = 'a jelszo nem eggyezik';
-      }else{
-          $insert = "INSERT INTO user_form(name, email, password, user_type) VALUES ('$name','$email','$pass', '$user_type')";
-          mysqli_query($connect, $insert);
-          header('location:login.php');
-      }
-  }
-
-};
+}
 
 
 
 ?>
-
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,30 +67,17 @@ if(isset($_POST['submit'])){
     </div>
 </div>
 
-
 <div class="form-container" style="margin-top: 100px">
-    <form action="" method="post">
-        <h3>Regisztralj most</h3>
-        <?php
-        if(isset($error)){
-            foreach ($error as $error){
-                echo '<span class="error-msg">'.$error.'</span>';
-            }
-        }
-        ?>
-        <input type="text" name="name" required placeholder="irja be a nevet">
+    <form action="" method="post" name="chngpwd">
+        <h3>Álljts be új jelszavat</h3>
+
         <input type="email" name="email" required placeholder="irja be az emailt">
-        <input type="password" name="password" required placeholder="adjon meg egy jelszot">
+        <input type="password" name="opassword" required placeholder="adjon meg a regi jelszavat">
+        <input type="password" name="password" required placeholder="adjon meg egz jelszot">
         <input type="password" name="cpassword" required placeholder="erositse meg a jelszavat">
-        <select name="user_type" id="">
-            <option value="user">user</option>
-        </select>
-        <input type="submit" name="submit" value="Regisztracio" class="form-btn">
-        <p>van mar accountja? <a href="login.php"> jelentkezz be</a></p>
+
+        <input type="submit" name="submit" value="Új jelszó" class="form-btn">
+        <p>megvan a jelszava? <a href="login.php"> jelentkezz be</a></p>
     </form>
 </div>
-
-
 </body>
-</html>
-<?php

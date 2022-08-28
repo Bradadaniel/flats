@@ -58,6 +58,8 @@ $type = $stmt->fetchAll();
         <a href="login.php" class="btn">login</a>
         <a href="register.php" class="btn">register</a>
         <a href="logout.php" class="btn">logout</a>
+        <a href="messages.php" class="btn">Üzenetek</a>
+        <a href="products.php" class="btn">Katalógus</a>
     </div>
 </div>
 
@@ -168,10 +170,23 @@ $type = $stmt->fetchAll();
             </thead>
             <?php
             foreach ($result as $value) {
+                $sql = "SELECT name
+        FROM user_form WHERE user_form.id=:user_id";
+                $query = $connect->prepare($sql);
+                $query->bindParam(':user_id', $value['user_id']);
+                $query->execute();
+                $result3 = $query->fetchColumn();
+
+                $sql = "SELECT city_name
+        FROM city WHERE city.id=:city_id";
+                $query = $connect->prepare($sql);
+                $query->bindParam(':city_id', $value['city_id']);
+                $query->execute();
+                $result2 = $query->fetchColumn();
               echo  '<tr>
                             <td><img width="80px" height="80px" src ="' .'uploads'. $value['image'] . '"></td>
-                            <td>' . $value['user_id'] . '</td>
-                            <td>' . $value['city_id'] . '</td>
+                            <td>' . $result3 . '</td>
+                            <td>' . $result2 . '</td>
                             <td>' . $value['size'] . ' m²</td>
                             <td>' . $value['price'] . ' din</td>
                             <td>' . $value['bedroom'] . '</td>
@@ -283,7 +298,7 @@ if (isset($_GET['delete'])){
                             <td>' . $value['user_type'] . '</td>
 
                             <td colspan="2">
-                            <a href="admin_update.php?id='.$value['id'].'" type="submit"value="' . $value['id'] . '" class="btn"><i class="bx bx-edit-alt"></i> Szerk.</a>
+                            <a href="data_update.php?id='.$value['id'].'" type="submit"value="' . $value['id'] . '" class="btn"><i class="bx bx-edit-alt"></i> Szerk.</a>
                             <a href="admin.php?delete='.$value['id'].'" type="submit"  value="' . $value['id'] . '" class="btn"><i class="bx bx-trash"></i>BAN</a>
                             </td>
                      </tr>';
@@ -298,12 +313,4 @@ if (isset($_GET['delete'])){
 </html>
 
 
-
-
-<!--                    <tr>-->
-<!--                        <td>--><?php //echo $fetch['file_name']?><!--</td>-->
-<!--                        <td>--><?php //echo $fetch['file_type']?><!--</td>-->
-<!--                        <td>--><?php //echo $fetch['date_uploaded']?><!--</td>-->
-<!--                        <td>--><?php //echo $fetch['location']?><!--</td>-->
-<!--                    </tr>-->
 

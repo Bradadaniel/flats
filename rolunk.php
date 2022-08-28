@@ -4,12 +4,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>New Home</title>
-    <link rel="stylesheet" href="agents.css">
+    <link rel="stylesheet" href="rolunk.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet"
@@ -33,59 +33,42 @@
                 <ul class="list">
                     <li><a href="index.php">Kezdőoldal</a></li>
                     <li><a href="rolunk.html">Rólunk</a></li>
-                    <li><a href="#">Tulajdonságok</a></li>
-                    <li><a href="#">Katalógus</a></li>
-                    <li><a href="#">Hirdetés</a></li>
-                    <li id="log-in"><h3><i class='bx bx-log-in' ></i></h3>Bejelentkezés</li>
+                    <li><a href="#tulaj">Tulajdonságok</a></li>
+                    <li><a href="products.php">Katalógus</a></li>
+                    <a href="login.php"><li id="log-in"><h3><i class='bx bx-log-in' ></i></h3></li></a>
                 </ul>
             </div>
-            <h4><i class='bx bx-log-in' id="log-in2"></i></h4>
+            <a href="login.php"><h4><i class='bx bx-log-in' id="log-in2"></i></h4></a>
         </nav>
     </div>
 </div>
-
 <!---->
-<div style="margin-top: 136px" class="container" id="con">
-    <h1 class="heading"><span>Meet</span>Agents</h1>
-    
-    <div class="profiles">
-        <div class="profile">
-            <img src="agents/agent1.jpg" class="profile-img">
 
-            <h3 class="agent-name">Albert</h3>
-            <h5>Ingatlan értékesitő</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-                autem blanditiis tempora temporibus? Consequuntur, nisi.</p>
+<div class="container" id="rolunk-container" style="height: 1500px">
+    <div class="row" style="margin:100px 0" id="Rolunk">
+        <h5 style="color:#2288ff;">Rólunk</h5>
+        <h1 style="color: #192f6a;">New Home Franchise a modern ingatlan-
+            és albérlet-közvetítő vállalat!</h1>
+        <p>A New Home csapata, minőségi ingatlanközvetítőként célul tűzte ki, hogy egy megújuló ingatlanpiacon európai normáknak megfelelő szolgáltatást nyújtson.</p>
+        <p>A New Home csapata, minőségi ingatlanközvetítőként célul tűzte ki, hogy egy megújuló ingatlanpiacon európai normáknak megfelelő szolgáltatást nyújtson.</p>
+        <p>A New Home csapata, minőségi ingatlanközvetítőként célul tűzte ki, hogy egy megújuló ingatlanpiacon európai normáknak megfelelő szolgáltatást nyújtson.</p>
+        <img src="img/rolunk1.jpg">
+        <p>A New Home csapata, minőségi ingatlanközvetítőként célul tűzte ki, hogy egy megújuló ingatlanpiacon európai normáknak megfelelő szolgáltatást nyújtson.</p>
+        <p>A New Home csapata, minőségi ingatlanközvetítőként célul tűzte ki, hogy egy megújuló ingatlanpiacon európai normáknak megfelelő szolgáltatást nyújtson.</p>
+        <p>A New Home csapata, minőségi ingatlanközvetítőként célul tűzte ki, hogy egy megújuló ingatlanpiacon európai normáknak megfelelő szolgáltatást nyújtson.</p>
+        <img src="img/rolunk2.jpg">
+        <!--      <button class="more">Bővebben...</button>-->
+        <div class="back-button">
+            <a href="index.php"><button class="back">Vissza...</button></a>
         </div>
     </div>
 
-    <div class="profiles">
-        <div class="profile">
-            <img src="agents/agent2.jpeg" class="profile-img">
-
-            <h3 class="agent-name">Chang</h3>
-            <h5>Ingatlan értékesitő</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-                autem blanditiis tempora temporibus? Consequuntur, nisi.</p>
-        </div>
-    </div>
-
-    <div class="profiles">
-        <div class="profile">
-            <img src="agents/agent3.jpg" class="profile-img">
-
-            <h3 class="agent-name">Abigele</h3>
-            <h5>Ingatlan értékesitő</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-                autem blanditiis tempora temporibus? Consequuntur, nisi.</p>
-        </div>
-    </div>
 </div>
 
 
-
+<!-- Kitoltes -->
 <div class="container-fluid" id="Footer-fluid">
-    <div class="container" id="Footer">
+    <div class="container" id="Footer3">
         <div class="Footer-text">
             <div class="footer-box">
                 <h2>New Home</h2>
@@ -118,5 +101,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

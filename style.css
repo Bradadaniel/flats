@@ -84,8 +84,9 @@
     right: 0;
     z-index: 1;
     color: #fff;
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
+    box-shadow: 10px 10px 25px;
 }
 .search{
     position: absolute;

@@ -163,8 +163,8 @@
     font-size: 20px;
     color: #333;
 }.form-container form p a{
-    color: crimson;
-}
+     color: crimson;
+ }
 .form-container form .error-msg{
     margin: 10px 0;
     display: block;
@@ -321,8 +321,6 @@ html{
     max-width: 1200px;
     padding: 2rem;
     margin: 0 auto;
-    background: url('img/admin.jpg');
-    background-attachment: fixed;
     background-size: cover;
 }
 .admin-product-form-container.centered{

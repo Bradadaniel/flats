@@ -37,16 +37,16 @@ if (isset($_POST['update_product'])&& $_POST['update_product']=='update' && !emp
     $query->bindParam(':date', $date, PDO::PARAM_STR);
     if ($query->execute()) {
         echo '<script>alert("A lakás szerkesztve")</script>';
-        header("Location: admin_update.php?id=".$id);
+        header("Location: user_update.php?id=".$id);
     } else {
         echo '<script>alert("Sikertelen szerkesztés")</script>';
-        header("Location: admin.php");
+        header("Location: user.php");
     }
 }
 
 
 
-if(!isset($_SESSION['admin_name'])){
+if(!isset($_SESSION['user_name'])){
     header('location:login.php');
 }
 
@@ -80,8 +80,8 @@ $type = $stmt->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet"
@@ -104,11 +104,11 @@ $type = $stmt->fetchAll();
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $result3 = $stmt->fetchAll();
         ?>
-        <form onsubmit="check()"  id="form1" name="form1"  method="post" enctype="multipart/form-data" action="admin_update.php">
+        <form onsubmit="check()"  id="form1" name="form1"  method="post" enctype="multipart/form-data" action="user_update.php">
             <h3>Lakás feltöltése</h3>
 
 
-            <input class="box"  value=" <?php echo $_SESSION['admin_name'] ?>" >
+            <input class="box"  value=" <?php echo $_SESSION['user_name'] ?>" >
             <input id="user_id" name="user_id" type="hidden" value="<?php echo $_SESSION['user_id'] ?>" >
             <span style="color: red" class="error" id="errSelect"></span><br>
             <select id="city_id" name="city_id" class="box">
@@ -165,7 +165,7 @@ $type = $stmt->fetchAll();
             <input type="hidden" name="update_product" id="update_product" value="update">
             <input type="submit" class="add-btn"   value="Lakás szerkesztése">
 
-            <a href="admin.php"class="btn">Vissza</a>
+            <a href="user.php"class="btn">Vissza</a>
         </form>
 
     </div>
