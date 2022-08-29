@@ -57,6 +57,7 @@ $type = $stmt->fetchAll();
         <a href="register.php" class="btn">register</a>
         <a href="logout.php" class="btn">logout</a>
         <a href="messages.php"  class="btn">Üzenetek</a>
+        <a href="products.php"  class="btn">Katalógus</a>
 <!--        <a href="userdata_update.php"  class="btn">Adatok módositása</a>-->
     </div>
 </div>

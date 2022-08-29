@@ -105,7 +105,7 @@ if(isset($_POST['submit'])){
         <input type="password" name="password" required placeholder="adjon meg egy jelszot">
         <input type="submit" name="submit" value="Bejelentkezes" class="form-btn">
         <p>nincs meg accountja? <a href="register.php"> regisztralj most</a></p>
-        <p><a href="change-password.php">Elfelejtett jelszo?
+        <p><a href="change-password.php">Jelszó váltás?
             </a></p>
     </form>
 </div>

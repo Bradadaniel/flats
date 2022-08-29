@@ -77,7 +77,7 @@ if(isset($_POST['submit'])) {
         <input type="password" name="cpassword" required placeholder="erositse meg a jelszavat">
 
         <input type="submit" name="submit" value="Új jelszó" class="form-btn">
-        <p>megvan a jelszava? <a href="login.php"> jelentkezz be</a></p>
+        <p>Mégsem szeretne új jelszót? <a href="login.php"> jelentkezz be</a></p>
     </form>
 </div>
 </body>

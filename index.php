@@ -64,7 +64,6 @@ session_start();
 <!---->
     <div class="text">
         Üdvözöljük az oldalon! <br>
-        Találja meg álmai otthonát!
     </div>
 <!--    <div class="search">-->
 <!--        <form>-->
